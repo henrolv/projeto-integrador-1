@@ -1,0 +1,51 @@
+.header-box {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 0.063rem solid rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 1.25rem;
+  align-items: center;
+  height: 5rem;
+}
+
+.header-logo {
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 1.25rem 0.625rem;
+    height: auto;
+  }
+
+  .header-logo {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.nav-menu a {
+  font-size: 1.125rem;
+  padding: 0.313rem 0;
+}
+
+.nav-menu .cadastre-se {
+  text-transform: uppercase;
+  padding: 0.625rem 1.25rem;
+  border: 0.063rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+}
