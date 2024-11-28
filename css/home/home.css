@@ -1,0 +1,120 @@
+.main-box {
+  width: 100%;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 0 0.625rem;
+  }
+}
+
+.eventos-principais {
+  height: 400px;
+  border-radius: 0.25rem;
+  border: 0.063rem solid rgba(0, 0, 0, 0.5);
+}
+
+.eventos-principais-itens img {
+  height: 400px;
+  max-height: 400px;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 600px) {
+  .eventos-principais {
+    height: calc(400px / 2);
+    border: 0.063rem solid rgba(0, 0, 0, 0.5);
+  }
+
+  .eventos-principais-itens img {
+    height: calc(400px / 2);
+    max-height: calc(400px / 2);
+    width: 100%;
+    border-radius: 0.25rem;
+  }
+}
+
+.outros-eventos {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto 0.625rem auto;
+}
+
+.outros-eventos-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.outros-eventos-itens li {
+  min-width: 282px;
+  min-height: 350px;
+  max-height: 350px;
+  border: 0.063rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+  width: 200px;
+  padding: 0.625rem;
+}
+
+.outros-eventos-itens div {
+  display: grid;
+  justify-items: start;
+  gap: 0.625rem 0;
+}
+
+.outros-eventos-itens p {
+  font-size: 1.25rem;
+}
+
+.outros-eventos-itens .outros-img {
+  min-height: 174px;
+  border: 0.063rem solid rgba(0, 0, 0, 0.5);
+}
+
+.outros-eventos-itens .outros-data {
+  background: #a8f;
+  color: #101;
+  font-size: 1rem;
+  padding: 0 0.625rem;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 600px) {
+  .outros-eventos {
+    padding: 0 0.625rem 0.625rem 0.625rem;
+  }
+
+  .outros-eventos-itens li {
+    border-top: 0.063rem solid rgba(0, 0, 0, 0.5);
+    border-bottom: 0.063rem solid rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    flex-grow: 1;
+    min-height: 100px;
+    padding: 0;
+  }
+
+  .outros-eventos-itens div {
+    padding: 0.625rem;
+  }
+
+  .outros-eventos-itens li div img {
+    width: 400px;
+    border-radius: 0.25rem;
+  }
+
+  .outros-eventos-itens p {
+    font-size: 1.125rem;
+  }
+
+  .outros-eventos-itens .outros-img {
+    height: 200px;
+    max-width: 100%;
+  }
+}
