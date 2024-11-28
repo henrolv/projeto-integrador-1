@@ -16,3 +16,17 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.divisor {
+  padding: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .divisor {
+    padding: 0.625rem;
+    font-size: 1.125rem;
+  }
+}
