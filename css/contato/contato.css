@@ -1,0 +1,90 @@
+.contato-box {
+  width: 100%;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.625rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.contato-form {
+  display: grid;
+}
+
+.form label {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.form input {
+  padding: 0.625rem;
+  font-size: 1rem;
+  margin-bottom: 0.625rem;
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+
+.form textarea {
+  display: block;
+  margin-top: 0.625rem;
+  height: 200px;
+  resize: none;
+  padding: 0.625rem;
+  font-size: 1.125rem;
+  margin-bottom: 1.125rem;
+}
+
+input,
+textarea {
+  border: 0.063rem solid rgba(0, 0, 0, 0.5);
+}
+
+#btn-enviar {
+  padding: 0.625rem 1.125rem;
+  text-transform: uppercase;
+  place-self: center;
+  font-size: 1rem;
+}
+
+.contato-info {
+  font-size: 1.5rem;
+  display: grid;
+  place-content: center;
+}
+
+.contato-info .info-redes {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .contato {
+    padding: 0.625rem;
+    grid-template-columns: 1fr;
+  }
+
+  .contato-info {
+    display: none;
+  }
+
+  .form input,
+  .form textarea,
+  .form label {
+    font-size: 1.2rem;
+  }
+
+  textarea {
+    margin-bottom: 0;
+  }
+
+  #btn-enviar {
+    font-size: 1rem;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+}
